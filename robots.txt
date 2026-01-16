@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://aeseo21.github.io/aeseo/sitemap.xml
+Sitemap: https://aeseo21.github.io/aeseo/sitemap_v2.xml
