@@ -1,43 +1,119 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solutions Techniques & Diagnostic Expert - AE SEO</title>
-    <meta name="description" content="Base de connaissances pour la réparation informatique et technique. Solutions expertes.">
+    
+    <title>Base de Connaissances Techniques & Diagnostics Experts - AESEO</title>
+    <meta name="description" content="Accédez à notre base de données d'expertise technique : guides de réparation, résolution de pannes informatiques et maintenance industrielle.">
+    <link rel="canonical" href="https://aeseo21.github.io/aeseo/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AESEO - Solutions Techniques & Diagnostics">
+    <meta property="og:description" content="Expertise technique et guides de dépannage mis à jour quotidiennement.">
+    <meta property="og:url" content="https://aeseo21.github.io/aeseo/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://aeseo21.github.io/aeseo/#website",
+          "url": "https://aeseo21.github.io/aeseo/",
+          "name": "AESEO",
+          "description": "Base de connaissances techniques et solutions de réparation",
+          "publisher": { "@id": "https://aeseo21.github.io/aeseo/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://aeseo21.github.io/aeseo/#organization",
+          "name": "AESEO Solutions",
+          "url": "https://aeseo21.github.io/aeseo/",
+          }
+        },
+        {
+          "@type": "ItemList",
+          "name": "Dernières solutions techniques",
+          "description": "Liste des derniers diagnostics et guides de réparation publiés.",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://aeseo21.github.io/aeseo/m/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://aeseo21.github.io/aeseo/p/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
-        h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-        .folder { padding: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; text-decoration: none; color: #333; font-weight: bold; background: #f9f9f9; }
-        .folder:hover { background: #0056b3; color: white; }
+        :root { --primary: #0056b3; --accent: #ff9900; --bg: #f8f9fa; --text: #2d3436; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; max-width: 1000px; margin: 0 auto; padding: 0; color: var(--text); background: var(--bg); }
+        header { background: white; padding: 60px 20px; text-align: center; border-bottom: 3px solid var(--primary); }
+        h1 { margin: 0; font-size: 2.5em; color: var(--primary); }
+        .container { padding: 40px 20px; }
+        
+        /* Grille des dossiers */
+        .folder-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+        .folder-card { background: white; padding: 20px; border-radius: 10px; text-align: center; text-decoration: none; color: var(--text); border: 1px solid #eee; transition: 0.3s; font-weight: 600; }
+        .folder-card:hover { border-color: var(--primary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .folder-card.active { background: #eef6ff; border-left: 4px solid var(--primary); }
+
+        /* Section Flux de données */
+        .live-feed { margin-top: 50px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .live-feed h2 { color: var(--primary); border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        .page-list { list-style: none; padding: 0; }
+        .page-list li { padding: 12px 0; border-bottom: 1px solid #f9f9f9; display: flex; align-items: center; }
+        .page-list li::before { content: "🛠️"; margin-right: 10px; font-size: 0.9em; }
+        .page-list a { color: var(--text); text-decoration: none; flex-grow: 1; }
+        .page-list a:hover { color: var(--primary); text-decoration: underline; }
+        
+        .sitemap-link { display: inline-block; margin-top: 40px; color: var(--primary); font-weight: bold; }
+        footer { text-align: center; padding: 40px; color: #95a5a6; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <h1>Archives des Diagnostics Experts</h1>
-    <p>Bienvenue sur notre base de données de solutions techniques. Nos agents analysent les pannes complexes pour vous proposer les meilleurs outils de réparation.</p>
-    
-<div class="grid">
-        <a href="0/" class="folder">0</a>
-        <a href="1/" class="folder">1</a>
-        <a href="2/" class="folder">2</a>
-        
-        <a href="a/" class="folder">A</a> <a href="b/" class="folder">B</a>
-        <a href="c/" class="folder">C</a> <a href="d/" class="folder">D</a>
-        <a href="e/" class="folder">E</a> <a href="f/" class="folder">F</a>
-        <a href="g/" class="folder">G</a> <a href="h/" class="folder">H</a>
-        <a href="i/" class="folder">I</a> <a href="j/" class="folder">J</a>
-        <a href="k/" class="folder">K</a> <a href="l/" class="folder">L</a>
-        <a href="m/" class="folder">M</a> <a href="n/" class="folder">N</a>
-        <a href="o/" class="folder">O</a> <a href="p/" class="folder">P</a>
-        <a href="r/" class="folder">R</a> <a href="s/" class="folder">S</a>
-        <a href="t/" class="folder">T</a> <a href="u/" class="folder">U</a>
-        <a href="v/" class="folder">V</a> <a href="w/" class="folder">W</a>
-        <a href="z/" class="folder">Z</a>
-        <a href="https://aeseo21.github.io/aeseo/sitemap.xml" class="folder">Plan du site</a>
-    </div>
 
-    <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
-    <p style="font-size: 0.8em; color: #777;">&copy; 2026 AESEO - Solutions Techniques</p>
+<header>
+    <h1>Expertise Technique & Maintenance</h1>
+    <p>Index centralisé des protocoles de diagnostic et solutions de réparation.</p>
+</header>
+
+<main class="container">
+    <section>
+        <h2>📂 Explorateur de Dossiers</h2>
+        <div class="folder-grid">
+            <a href="c/" class="folder-card active">Dossier C</a>
+            <a href="d/" class="folder-card active">Dossier D</a>
+            <a href="e/" class="folder-card active">Dossier E</a>
+            <a href="m/" class="folder-card active">Dossier M</a>
+            <a href="o/" class="folder-card active">Dossier O</a>
+            <a href="p/" class="folder-card active">Dossier P</a>
+            <a href="r/" class="folder-card active">Dossier R</a>
+            <a href="v/" class="folder-card active">Dossier V</a>
+        </div>
+    </section>
+
+    <section class="live-feed">
+        <h2>🚀 Derniers Diagnostics Déployés</h2>
+        <ul id="latest-content" class="page-list">
+            <li><a href="m/materiels-problemes.html">Optimisation des flux matériels et diagnostic de pannes</a></li>
+        </ul>
+        <a href="sitemap.xml" class="sitemap-link">Consulter le Plan du Site complet (XML)</a>
+    </section>
+</main>
+
+<footer>
+    <p>Propulsé par AESEO Intelligence - Solutions Techniques Professionnelles</p>
+    <p>&copy; 2026 France</p>
+</footer>
+
 </body>
 </html>
